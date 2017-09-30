@@ -75,26 +75,26 @@ return [
             'subscribe'          => 'Iscriviti agli aggiornamenti via email.',
             'subscribed'         => 'Ti sei appena iscritto agli aggiornamenti email, controlla la tua casella per confermare la sottoscrizione',
             'verified'           => 'La tua iscrizione &egrave; stata confermata. Grazie!',
-            'manage'             => 'Manage your subscription',
+            'manage'             => 'Gestisci la tua iscrizione',
             'unsubscribe'        => 'Annulla l\'iscrizione agli aggiornamenti email.',
             'unsubscribed'       => 'La tua iscrizione &egrave; stata rimossa.',
             'failure'            => 'Qualcosa è andato storto con l\'iscrizione.',
             'already-subscribed' => 'Non è possibile iscrivere :email perchè risulta già iscritto.',
             'verify'             => [
-                'text'   => "Please confirm your email subscription to :app_name status updates.\n:link",
-                'html'   => '<p>Please confirm your email subscription to :app_name status updates.</p>',
-                'button' => 'Confirm Subscription',
+                'text'   => "Conferma l'iscrizione a :app_name. \n:link",
+                'html'   => 'Per favore conferma la tua iscrizione tramite email su :app_name',
+                'button' => 'Conferma iscrizione',
             ],
             'maintenance' => [
-                'subject' => '[Maintenance Scheduled] :name',
+                'subject' => '[Manutenzione programmata] :name',
             ],
             'incident' => [
-                'subject' => '[New Incident] :status: :name',
+                'subject' => '[Nuova segnalazione] :status: :name',
             ],
             'component' => [
                 'subject'       => 'Aggiornamento di stato del componente',
-                'text'          => 'Lo stato del componente: nome_componente è cambiato. Il nuovo stato del componente è :component_human_status.\nGrazie,: app_name',
-                'html'          => '<p>Lo stato del componente: nome_componente è cambiato. Il nuovo stato del componente è :component_human_status.</p><p>Grazie, :app_name</p>',
+                'text'          => 'Lo stato del componente: :component_name è cambiato. Il nuovo stato del componente è :component_human_status.\nGrazie, :app_name',
+                'html'          => '<p>Lo stato del componente :component_name è cambiato. Il nuovo stato del componente è :component_human_status.</p><p>Grazie, :app_name</p>',
                 'tooltip-title' => 'Iscriviti alle notifiche di :component_name.',
             ],
         ],
@@ -103,8 +103,8 @@ return [
     'users' => [
         'email' => [
             'invite' => [
-                'text'           => "Sei stato invitato nel team :app_name status page, per iscriverti segui il prossimo link.\n:link\nGrazie, :app_name",
-                'html'           => '<p>Sei stato invitato nel team :app_name status page, per iscriverti segui il prossimo link.</p><p><a href=":link">:link</a></p><p>Grazie, :app_name</p>',
+                'text' => "Sei stato invitato nel team :app_name status page, per iscriverti segui il prossimo link.\n:link\nGrazie, :app_name",
+                'html' => '<p>Sei stato invitato nel team :app_name status page, per iscriverti segui il prossimo link.</p><p><a href=":link">:link</a></p><p>Grazie, :app_name</p>',
             ],
         ],
     ],
@@ -135,7 +135,7 @@ return [
     // Other
     'home'            => 'Home',
     'description'     => 'Resta informato sugli ultimi aggiornamenti dei servizi di :app.',
-    'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links">Cachet</a>.',
+    'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links"> Cachet</a>.',
     'about_this_site' => 'Informazioni sul sito',
     'rss-feed'        => 'RSS',
     'atom-feed'       => 'Atom',

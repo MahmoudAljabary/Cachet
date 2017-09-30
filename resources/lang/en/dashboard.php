@@ -86,12 +86,12 @@ return [
             'title'   => 'Add a component',
             'message' => 'You should add a component.',
             'success' => 'Component created.',
-            'failure' => 'Something went wrong with the component, please try again.',
+            'failure' => 'Something went wrong with the component group, please try again.',
         ],
         'edit' => [
             'title'   => 'Edit a component',
             'success' => 'Component updated.',
-            'failure' => 'Something went wrong with the component, please try again.',
+            'failure' => 'Something went wrong with the component group, please try again.',
         ],
         'delete' => [
             'success' => 'The component has been deleted!',
@@ -224,7 +224,7 @@ return [
             'contributors'  => 'Contributors',
             'license'       => 'Cachet is a BSD-3-licensed open source project, released by <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Backers & Sponsors',
-            'backers'       => 'If you\'d like to support future development, check out the <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a> campaign.',
+            'backers'       => 'If you\'d like to support future development, check out the CrowdIn and GitHub.',
             'thank-you'     => 'Thank you to each and every one of the :count contributors.',
         ],
     ],
@@ -251,10 +251,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Support Cachet',
-        'support_subtitle' => 'Check out our <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong> page!',
         'news'             => 'Latest News',
-        'news_subtitle'    => 'Get the latest updates',
+        'news_subtitle'    => 'Get the latest update',
     ],
 
     // Welcome modal

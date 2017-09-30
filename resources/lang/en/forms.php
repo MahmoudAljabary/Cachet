@@ -25,9 +25,9 @@ return [
         'session_driver'   => 'Session Driver',
         'mail_driver'      => 'Mail Driver',
         'mail_host'        => 'Mail Host',
-        'mail_address'     => 'Mail From',
-        'mail_username'    => 'Mail Client User',
-        'mail_password'    => 'Mail Client Password',
+        'mail_address'     => 'Mail From Address',
+        'mail_username'    => 'Mail Username',
+        'mail_password'    => 'Mail Password',
     ],
 
     // Login form fields
@@ -123,10 +123,10 @@ return [
             'analytics_piwik_siteid' => 'Piwik\'s site id',
         ],
         'localization' => [
-            'site-timezone'          => 'Site timezone',
-            'site-locale'            => 'Site language',
-            'date-format'            => 'Date format',
-            'incident-date-format'   => 'Incident timestamp format',
+            'site-timezone'        => 'Site timezone',
+            'site-locale'          => 'Site language',
+            'date-format'          => 'Date format',
+            'incident-date-format' => 'Incident timestamp format',
         ],
         'security' => [
             'allowed-domains'      => 'Allowed domains',

@@ -75,21 +75,21 @@ return [
             'subscribe'          => 'Suscríbete para recibir actualizaciones por correo electrónico.',
             'subscribed'         => 'Te has subscrito a las notificaciones por correo electrónico, por favor verifica tu correo electrónico para confirmar tu subscripción.',
             'verified'           => 'Tu subscripción por correo electrónico ha sido confirmada. Gracias!',
-            'manage'             => 'Manage your subscription',
+            'manage'             => 'Administre su suscripción',
             'unsubscribe'        => 'Darse de baja de alertas.',
             'unsubscribed'       => 'Tu subscripción de correo electrónico ha sido cancelada.',
             'failure'            => 'Algo salió mal con la subscripción.',
             'already-subscribed' => 'No se puede suscribir :email porque ya esta suscrito.',
             'verify'             => [
-                'text'   => "Please confirm your email subscription to :app_name status updates.\n:link",
-                'html'   => '<p>Please confirm your email subscription to :app_name status updates.</p>',
-                'button' => 'Confirm Subscription',
+                'text'   => "Por favor confirme su subscripcion por correo a las actualizaciones de estado de :app_name.\n:link",
+                'html'   => '<p>Por favor confirme su suscripción por correo a las actualizaciones de estado de :app_name.</p>',
+                'button' => 'Confirme su suscripción',
             ],
             'maintenance' => [
-                'subject' => '[Maintenance Scheduled] :name',
+                'subject' => '[Mantenimiento programado] :name',
             ],
             'incident' => [
-                'subject' => '[New Incident] :status: :name',
+                'subject' => '[Nuevo incidente] :status: :name',
             ],
             'component' => [
                 'subject'       => 'Actualización de estado del componente',
@@ -103,8 +103,8 @@ return [
     'users' => [
         'email' => [
             'invite' => [
-                'text'           => "Te han invitado a la página de estado del equipo de :app_name, para registrarte sigue este enlace.\n:link\nGracias, :app_name",
-                'html'           => '<p>Has sido invitado a la página de estado del equipo :app_name, para inscribirte sigue el siguiente enlace.</p><p><a href=":link">:link</a></p><p>Gracias, :app_name</p>',
+                'text' => "Te han invitado a la página de estado del equipo de :app_name, para registrarte sigue este enlace.\n:link\nGracias, :app_name",
+                'html' => '<p>Has sido invitado a la página de estado del equipo :app_name, para inscribirte sigue el siguiente enlace.</p><p><a href=":link">:link</a></p><p>Gracias, :app_name</p>',
             ],
         ],
     ],

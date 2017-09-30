@@ -48,11 +48,11 @@ class SetupController extends Controller
      * @var string[]
      */
     protected $mailDrivers = [
-        'smtp'      => 'SMTP',
-        'mail'      => 'Mail',
-        'sendmail'  => 'Sendmail',
-        'mailgun'   => 'Mailgun',
-        'mandrill'  => 'Mandrill',
+        'smtp'     => 'SMTP',
+        'mail'     => 'Mail',
+        'sendmail' => 'Sendmail',
+        'mailgun'  => 'Mailgun',
+        'mandrill' => 'Mandrill',
         // 'ses'       => 'Amazon SES', this will be available only if aws/aws-sdk-php is installed
         'sparkpost' => 'SparkPost',
         'log'       => 'Log (Testing)',
@@ -149,7 +149,7 @@ class SetupController extends Controller
             return $input->mail_driver === 'smtp';
         });
 
-        $v->sometimes(['env.mail_address', 'env.mail_username', 'env.mail_password'], 'required', function ($input) {
+        $v->sometimes(['env.mail_address', 'env.mail_username'], 'required', function ($input) {
             return $input->mail_driver !== 'log';
         });
 
@@ -250,10 +250,11 @@ class SetupController extends Controller
         try {
             (new Dotenv($dir, $file))->load();
 
-            $envValue = env(strtoupper($key)) ?: 'null';
+            $envKey = strtoupper($key);
+            $envValue = env($envKey) ?: 'null';
 
             file_put_contents($path, str_replace(
-                $envValue, $value, file_get_contents($path)
+                $envKey.'='.$envValue, $envKey.'='.$value, file_get_contents($path)
             ));
         } catch (InvalidPathException $e) {
             //

@@ -34,7 +34,7 @@ return [
         'invalid'       => 'Nome de usuário ou senha incorretos',
         'invalid-token' => 'Token inválido',
         'cookies'       => 'Você deve habilitar os cookies do navegador para logar.',
-        'rate-limit'    => 'Rate limit exceeded.',
+        'rate-limit'    => 'Limite de acesso excedido.',
     ],
 
     // Incidents form fields
@@ -46,7 +46,7 @@ return [
         'message-help'       => 'Você também pode usar o Markdown.',
         'scheduled_at'       => 'Agendar a manutenção para quando?',
         'incident_time'      => 'Quando esse incidente ocorreu?',
-        'notify_subscribers' => 'Notificar os inscritos?',
+        'notify_subscribers' => 'Notificar os assinantes?',
         'visibility'         => 'Visibilidade do incidente',
         'public'             => 'Visível para todos',
         'logged_in_only'     => 'Visível somente para usuários logados',
@@ -118,10 +118,10 @@ return [
             'analytics_piwik_siteid' => 'Id do site no Piwik',
         ],
         'localization' => [
-            'site-timezone'          => 'Fuso horário do site',
-            'site-locale'            => 'Idioma do site',
-            'date-format'            => 'Formato da data',
-            'incident-date-format'   => 'Formato de Hora do Incidente',
+            'site-timezone'        => 'Fuso horário do site',
+            'site-locale'          => 'Idioma do site',
+            'date-format'          => 'Formato da data',
+            'incident-date-format' => 'Formato de Hora do Incidente',
         ],
         'security' => [
             'allowed-domains'      => 'Domínios permitidos',

@@ -34,7 +34,7 @@ return [
         'invalid'       => 'Ongeldige gebruikersnaam of wachtwoord',
         'invalid-token' => 'Ongeldig token',
         'cookies'       => 'U moet cookies inschakelen om in te loggen.',
-        'rate-limit'    => 'Rate limit exceeded.',
+        'rate-limit'    => 'Snelheids limiet overschreden.',
     ],
 
     // Incidents form fields
@@ -118,10 +118,10 @@ return [
             'analytics_piwik_siteid' => 'Site-id van Piwik',
         ],
         'localization' => [
-            'site-timezone'          => 'Website tijdzone',
-            'site-locale'            => 'Taal van de site',
-            'date-format'            => 'Datum formaat',
-            'incident-date-format'   => 'Incident tijdsaanduiding',
+            'site-timezone'        => 'Website tijdzone',
+            'site-locale'          => 'Taal van de site',
+            'date-format'          => 'Datum formaat',
+            'incident-date-format' => 'Incident tijdsaanduiding',
         ],
         'security' => [
             'allowed-domains'      => 'Toegestane domeinen',
